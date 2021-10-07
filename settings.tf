@@ -9,7 +9,7 @@ provider "google-beta" {
 }
 
 terraform {
-  required_version = ">= 0.14"
+  required_version = ">= 0.13.5"
   # backend "gcs" {
   #   bucket  = "your-bucket-here-tfstate"
   #   prefix  = "project/project-state"

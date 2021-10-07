@@ -1,8 +1,8 @@
-# GCP VPN HA Terraform #
+# **GCP VPN HA Terraform** #
 
 Deploy HA GCP VPN using HashiCorp Terraform
 
-The code deploys:
+## **The code deploys** ##
 
 * VPN Gateway
 * VPN External (Peer) Gateway
@@ -11,13 +11,27 @@ The code deploys:
 * 2 x Cloud Router Interfaces
 * 2 x Cloud Router Interface Peers
 
-## Before you begin ##
+## **Requirements** ##
+
+Describes requirements for using this module.
+
+### Software ###
+
+The following dependencies must be available:
+
+* [Terraform](https://www.terraform.io/downloads.html)>= v0.13.5.
+* [Terraform google provider](https://registry.terraform.io/providers/hashicorp/google/latest/docs)>= v3.87.0.
+* [Terraform google-beta provider](https://registry.terraform.io/providers/hashicorp/google/latest/docs)>= v3.87.0.
+
+### Service Account ###
 
 * Ensure the you have a [service account](https://cloud.google.com/iam/docs/creating-managing-service-accounts) with sufficient [permissions](https://cloud.google.com/network-connectivity/docs/vpn/how-to/creating-ha-vpn#expandable-1).
-* How to create a [strong pre-shared-key](https://cloud.google.com/network-connectivity/docs/vpn/how-to/generating-pre-shared-key)
-* [Terraform >= v0.13.5](https://www.terraform.io/downloads.html).
 
-## Quickstart ##
+### General for Module ###
+
+* How to create a [strong pre-shared-key](https://cloud.google.com/network-connectivity/docs/vpn/how-to/generating-pre-shared-key).
+
+## **Simple Usage** ##
 
 1. Clone the repository:
 
@@ -72,7 +86,16 @@ The code deploys:
         terraform show
         ```
 
-## Author ##
+## **Calling module** ##
 
-* Created by Taynan Tofanini <taynantofanini@gmail.com>
-* https://github.com/taynantofanini/terraform-gcp-ha-vpn
+```hcl
+module "ha-vpn" {
+  source = "github.com/taynantofanini/terraform-gcp-ha-vpn"
+  #insert the required variables here
+}
+```
+
+## **Author** ##
+
+* Taynan Tofanini <taynantofanini@gmail.com>
+* <https://github.com/taynantofanini/terraform-gcp-ha-vpn>
