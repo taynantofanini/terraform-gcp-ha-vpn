@@ -1,8 +1,9 @@
 variable "project_id" {
-  description = "GCP project ID"
   type        = string
+  description = "GCP project ID"
 }
 variable "gcp_auth_file" {
+  type        = string
   description = "GCP authentication file"
 }
 variable "gcp_region" {
