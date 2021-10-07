@@ -2,7 +2,7 @@
 
 Deploy HA GCP VPN using HashiCorp Terraform
 
-## **The code deploys** ##
+## The code deploys ##
 
 * VPN Gateway
 * VPN External (Peer) Gateway
@@ -45,7 +45,7 @@ The following dependencies must be available:
     cd terraform-gcp-ha-vpn
     ```
 
-3. Change variable values in **terraform.tfvars** and backend path in __provider.tf__ for your envrionment.
+3. Change variable values in **terraform.tfvars** and backend path in **settings.tf** for your envrionment.
 
 4. Run the following Terraform commands:
 
@@ -63,22 +63,14 @@ The following dependencies must be available:
         terraform apply
         ```
 
-    3. Examine configuration files:
-
-        ```bash
-        terraform init
-        terraform validate
-        terraform plan
-        ```
-
-    4. Confirm configurations:
+    3. Confirm configurations:
 
         ```bash
         terraform output
         terraform show
         ```
 
-    5. To destroy resources:
+    4. To destroy resources:
 
         ```bash
         terraform plan -destroy
@@ -86,7 +78,7 @@ The following dependencies must be available:
         terraform show
         ```
 
-## **Calling module** ##
+## **Calling this module as child module** ##
 
 ```hcl
 module "ha-vpn" {
