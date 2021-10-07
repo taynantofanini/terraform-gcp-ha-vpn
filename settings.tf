@@ -1,11 +1,11 @@
 provider "google" {
   project     = var.project_id
-  credentials = file("${path.module}/auth/authfile.json")
+  credentials = file(var.gcp_auth_file)
 }
 
 provider "google-beta" {
   project     = var.project_id
-  credentials = file("${path.module}/auth/authfile.json")
+  credentials = file(var.gcp_auth_file)
 }
 
 terraform {
