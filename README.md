@@ -15,7 +15,7 @@ The code deploys:
 
 * Ensure the you have a [service account](https://cloud.google.com/iam/docs/creating-managing-service-accounts) with sufficient [permissions](https://cloud.google.com/network-connectivity/docs/vpn/how-to/creating-ha-vpn#expandable-1).
 * How to create a [strong pre-shared-key](https://cloud.google.com/network-connectivity/docs/vpn/how-to/generating-pre-shared-key)
-* Terraform >= v0.13.5.
+* [Terraform >= v0.13.5](https://www.terraform.io/downloads.html).
 
 ## Quickstart ##
 
@@ -31,7 +31,7 @@ The code deploys:
     cd terraform-gcp-ha-vpn
     ```
 
-3. Change variable values in terraform.tfvars for your envrionment.
+3. Change variable values in **terraform.tfvars** and backend path in __provider.tf__ for your envrionment.
 
 4. Run the following Terraform commands:
 
@@ -75,3 +75,4 @@ The code deploys:
 ## Meta ##
 
 * Created by Taynan Tofanini <taynantofanini@gmail.com>
+* https://github.com/taynantofanini/terraform-gcp-ha-vpn
