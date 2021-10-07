@@ -43,13 +43,13 @@ The code deploys:
         terraform plan
         ```
 
-    * Apply the configurations:
+    2. Apply the configurations:
 
         ```bash
         terraform apply
         ```
 
-    * Examine configuration files:
+    3. Examine configuration files:
 
         ```bash
         terraform init
@@ -57,14 +57,14 @@ The code deploys:
         terraform plan
         ```
 
-    * Confirm configurations:
+    4. Confirm configurations:
 
         ```bash
         terraform output
         terraform show
         ```
 
-    * To destroy resources:
+    5. To destroy resources:
 
         ```bash
         terraform plan -destroy
@@ -75,4 +75,3 @@ The code deploys:
 ## Meta ##
 
 * Created by Taynan Tofanini <taynantofanini@gmail.com>
-* Contato da equipe: <infraestrutura@santodigital.com.br>
