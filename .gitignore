@@ -2,7 +2,7 @@
 **/.terraform/*
 
 # Credentials
-credentials.json
+/auth/*
 
 # .tfstate
 terraform.tfstate
