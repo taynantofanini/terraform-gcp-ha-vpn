@@ -1,0 +1,78 @@
+# GCP VPN HA Terraform #
+
+Deploy HA GCP VPN using HashiCorp Terraform
+
+The code deploys:
+
+* VPN Gateway
+* VPN External (Peer) Gateway
+* 2 x VPN Tunnel
+* Cloud Router
+* 2 x Cloud Router Interfaces
+* 2 x Cloud Router Interface Peers
+
+## Before you begin ##
+
+* Ensure the you have a [service account](https://cloud.google.com/iam/docs/creating-managing-service-accounts) with sufficient [permissions](https://cloud.google.com/network-connectivity/docs/vpn/how-to/creating-ha-vpn#expandable-1).
+* How to create a [strong pre-shared-key](https://cloud.google.com/network-connectivity/docs/vpn/how-to/generating-pre-shared-key)
+* Terraform >= v0.13.5.
+
+## Quickstart ##
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/taynantofanini/terraform-gcp-ha-vpn.git
+    ```
+
+2. Go to module folder
+
+    ```bash
+    cd terraform-gcp-ha-vpn
+    ```
+
+3. Change variable values in terraform.tfvars for your envrionment.
+
+4. Run the following Terraform commands:
+
+    1. Examine configuration files:
+
+        ```bash
+        terraform init
+        terraform validate
+        terraform plan
+        ```
+
+    * Apply the configurations:
+
+        ```bash
+        terraform apply
+        ```
+
+    * Examine configuration files:
+
+        ```bash
+        terraform init
+        terraform validate
+        terraform plan
+        ```
+
+    * Confirm configurations:
+
+        ```bash
+        terraform output
+        terraform show
+        ```
+
+    * To destroy resources:
+
+        ```bash
+        terraform plan -destroy
+        terraform destroy
+        terraform show
+        ```
+
+## Meta ##
+
+* Created by Taynan Tofanini <taynantofanini@gmail.com>
+* Contato da equipe: <infraestrutura@santodigital.com.br>
