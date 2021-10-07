@@ -78,7 +78,7 @@ The following dependencies must be available:
         terraform show
         ```
 
-## **Calling this module as child module** ##
+## **Calling this module as a child module** ##
 
 ```hcl
 module "ha-vpn" {
