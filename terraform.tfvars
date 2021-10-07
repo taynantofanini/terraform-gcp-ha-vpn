@@ -1,5 +1,5 @@
 # General
-gcp_auth_file = "auth/authfile.json"
+gcp_auth_file = "auth/authfile.json" # put your auth file name
 project_id    = "your-project-id"
 network       = "your-network"
 gcp_region    = "gcp-region"
