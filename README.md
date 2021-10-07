@@ -72,7 +72,7 @@ The code deploys:
         terraform show
         ```
 
-## Meta ##
+## Author ##
 
 * Created by Taynan Tofanini <taynantofanini@gmail.com>
 * https://github.com/taynantofanini/terraform-gcp-ha-vpn
